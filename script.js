@@ -11,9 +11,9 @@ function onClickLinkedInLink() {
 }
 
 function onClickDownload() {
-    document.getElementById('resume').onclick(
-        window.open("https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf", "_blank")
-    );
+    // document.getElementById('resume').onclick(
+    //     window.open("https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf", "_blank")
+    // );
 
     var downloadLink = document.createAttribute("a");
     
@@ -23,7 +23,6 @@ function onClickDownload() {
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
-
 
 }
 
