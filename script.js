@@ -12,7 +12,7 @@ function onClickLinkedInLink() {
 
 function onClickDownload() {
     document.getElementById('resume').onclick(
-        window.open("pdf/resume.pdf", "_blank")
+        window.open("https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf", "_blank")
     );
 }
 
