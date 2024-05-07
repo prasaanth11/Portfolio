@@ -1,0 +1,345 @@
+*{
+    margin: 0.5rem;
+    font-size: 19;
+    background-color: #000000 ;
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.title_content {
+    color: #ff004f;
+    text-align: center;
+}
+
+
+/* ******************************************************** */
+/* Home page */
+
+#home {
+    padding-top: 10px;
+}
+
+#logo-image {
+    height: 100px;
+    width: 100px;
+    margin-top: -0.5%;
+    animation: rotate-logo-image 2s 1s ease-in infinite;
+}
+
+@keyframes rotate-logo-image {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+  }
+
+#navbar_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar_right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar_right li {
+    list-style: none;
+    /* margin-left: 40px; */
+}
+
+#navbar_right a {
+    font-size: 14;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+#navbar_right a::first-letter{
+    color: #ff004f;
+}
+
+#navbar_right a:hover {
+    color:  #ff004f;
+}
+
+#navbar_right a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    background-color:  #ff004f;;
+    height: 2px;
+    bottom: -6px;
+    transition: 0.2s;
+}
+
+#navbar_right a:hover::after {
+    width: 100%;
+}
+
+#home_page_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 9%;
+    gap: 5rem;
+}
+
+#home_image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px blue;
+}
+
+#my_name {
+    display: flex;
+    color: #ff004f;
+    font-size: x-large;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: name-typing 3.5s infinite;
+}
+
+@keyframes name-typing {
+    from { width: 0; }
+    to { width: 100%;}
+}
+
+#self-intro {
+    margin-top: 5%;
+}
+
+
+/* ******************************************************** */
+/* Home page */
+
+#about_me {
+    padding-top: 30px;
+}
+
+#about_me_container {
+    display: flex;
+    justify-content: space-around;
+    line-height: 2rem;
+    padding-top: 50px;
+    margin-left: 3%;
+}
+
+#about_me_container li {
+    word-break: initial;
+    font-size: 16;
+    list-style: none;
+    margin-left: -2%;
+}
+
+#about_me_container .fa {
+    font-size: 13;
+    color: #ff004f;
+}
+
+#about_me_image {
+    height: 333px;
+    width: 250px;
+    border-radius: 10%;
+}
+
+#about_me_container sup {
+    font-size: 10;
+    margin-left: -0.1%;
+    margin-right: -0.1%;
+}
+
+
+/* ******************************************************** */
+/* Experience */
+
+#experience {
+    padding-top: 30px;
+}
+
+#experience-container {
+    margin-left: 5%;
+    padding-top: 30px;
+}
+
+.institution {
+    font-size: 16;
+    font-weight: bold;
+}
+
+#experience .institution{
+    line-height: 0.1rem;
+}
+
+.duration {
+    font-size: 11;
+    margin-bottom: 2%;
+    color: #ff004f;
+}
+
+.mark {
+    font-size: 12;
+}
+
+.study {
+    font-size: 13;
+}
+
+.role{
+    font-size: 15;
+}
+
+.experience {
+    font-size: 14;
+}
+
+.role-list li {
+    font-size: 14;
+    line-height: 1.3rem;
+}
+
+
+
+#experience-container .role-list{
+    margin-bottom: 5%;
+}
+
+/* ******************************************************** */
+/* Education */
+
+#education {
+    padding-top: 30px;
+}
+
+#education-container {
+    padding-top: 20px;
+}
+
+#education ul{
+    margin-left: 5%;
+}
+
+#education sup {
+    font-size: 10;
+}
+
+#education li {
+    margin-bottom: 2%;
+    line-height: 0.7rem;
+}
+
+/* #education .institution {
+    line-height: 0.4rem;
+} */
+
+#education .duration {
+    margin-bottom: 4%;
+}
+
+#education .study sup{
+    margin: 0.1% 0;
+}
+
+/* ******************************************************** */
+/* publication */
+
+#publication {
+    padding-top: 30px;
+}
+
+#publication-body{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+} 
+
+#publication li {
+    font-size: 15;
+    line-height: 1.2rem;
+}
+
+#publication-image{
+    margin-top: 20%;
+    object-fit: fill;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 0 15px blue;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+#app-link {
+    margin-top: 5%;
+    background-color: #ff004f;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 5%;
+    padding: 1 20px;
+    display: inline-block;
+    font-size: 13px;
+    border-color: pink;
+}
+
+#app-link i {
+    margin-left: -0.5%;
+}
+
+/* ******************************************************** */
+/* contact me */
+
+#contact-me{
+    padding-top: 30px;
+}
+
+#contact-me-text {
+    text-align: left;
+    margin-top: 9%;
+    margin-left: 9.5%;
+}
+
+.card {
+    height: 140px;
+    width: 140px;
+    box-shadow: 0 0 20px blue;
+    background-color: white;  
+    border-color: blue;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card i {
+    font-size: 60px;
+    color: #0077D5;
+    justify-content: center;
+    background-color: white;
+}
+
+.card p {
+    font-size: 16;
+    background-color: white;
+    color: #000000;
+}
+
+.card-list {
+    display: flex;
+    margin-top: 7%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#email_id {
+    font-size: 15;
+}
+
+#email_id_icon{
+    padding-top: 6.5%;
+}
