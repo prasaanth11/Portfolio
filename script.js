@@ -14,6 +14,17 @@ function onClickDownload() {
     document.getElementById('resume').onclick(
         window.open("https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf", "_blank")
     );
+
+    var downloadLink = document.createAttribute("a");
+    
+    downloadLink.href = "https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf";
+    downloadLink.setAttribute("download", "resume.pdf");
+
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
