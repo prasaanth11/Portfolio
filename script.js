@@ -10,21 +10,21 @@ function onClickLinkedInLink() {
     );
 }
 
-function onClickDownload() {
-    // document.getElementById('resume').onclick(
-    //     window.open("https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf", "_blank")
-    // );
+// function onClickDownload() {
+//     // document.getElementById('resume').onclick(
+//     //     window.open("https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf", "_blank")
+//     // );
 
-    var downloadLink = document.createElement("a");
-    
-    downloadLink.href = "https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf";
-    downloadLink.setAttribute("download", "resume.pdf");
+//     var downloadLink = document.createElement("a");
+//     console.log(downloadLink);
+//     downloadLink.href = "https://github.com/prasaanth11/Portfolio/blob/main/pdf/resume.pdf";
+//     downloadLink.setAttribute("download", "resume.pdf");
 
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+//     document.body.appendChild(downloadLink);
+//     downloadLink.click();
+//     // document.body.removeChild(downloadLink);
 
-}
+// }
 
 document.addEventListener("DOMContentLoaded", function() {
     var homeLink = document.getElementById("home_link");
