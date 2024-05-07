@@ -12,7 +12,7 @@ function onClickLinkedInLink() {
 
 function onClickDownload() {
     document.getElementById('resume').onclick(
-        window.open("E:\\academic lab\\presonal_dev\\portfolio\\pdf\\resume.pdf", "_blank")
+        window.open("pdf/resume.pdf", "_blank")
     );
 }
 
